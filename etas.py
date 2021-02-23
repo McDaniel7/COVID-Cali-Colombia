@@ -13,6 +13,28 @@ import torch.optim as optim
 # from shapely.ops import cascaded_union
 
 
+class StdDiffusionKernel(object):
+    """
+    Kernel function including the diffusion-type model proposed by Musmeci and
+    Vere-Jones (1992).
+    """
+    def __init__(self, C=1., beta=1., sigma_x=1., sigma_y=1.):
+        self.C       = C
+        self.beta    = beta
+        self.sigma_x = sigma_x
+        self.sigma_y = sigma_y
+
+    def nu(self, t, s, his_t, his_s):
+        delta_s = s - his_s
+        delta_t = t - his_t
+        delta_x = delta_s[:, 0]
+        delta_y = delta_s[:, 1]
+        return torch.exp(- self.beta * delta_t) * \
+            (self.C / (2 * np.pi * self.sigma_x * self.sigma_y * delta_t)) * \
+            torch.exp((- 1. / (2 * delta_t)) * \
+                ((torch.pow(delta_x, 2) / torch.pow(self.sigma_x, 2)) + \
+                (torch.pow(delta_y, 2) / torch.pow(self.sigma_y, 2))))
+
 class TorchETAS(torch.nn.Module):
     """
     PyTorch Module for ETAS
