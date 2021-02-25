@@ -55,12 +55,16 @@ class NonNegativeClipper(object):
     def __call__(self, module):
         """enforce non-negative constraints"""
         # TorchHawkes
-        if hasattr(module, 'Lambda0'):
-            Lambda0 = module.Lambda0.data
-            module.Lambda0.data = torch.clamp(Lambda0, min=0.)
+        if hasattr(module, 'Mu0'):
+            Mu0 = module.Mu0.data
+            module.Mu0.data = torch.clamp(Mu0, min=0.)
         if hasattr(module, 'Alpha'):
             Alpha = module.Alpha.data
             module.Alpha.data = torch.clamp(Alpha, min=0.)
+        # TorchETAS
+        if hasattr(module, 'Lambda0'):
+            Lambda0 = module.Lambda0.data
+            module.Lambda0.data = torch.clamp(Lambda0, min=0.)
         if hasattr(module, 'Beta'):
             Beta  = module.Beta.data
             module.Beta.data  = torch.clamp(Beta, min=0.)
