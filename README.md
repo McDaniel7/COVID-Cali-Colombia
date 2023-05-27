@@ -9,7 +9,7 @@ Most COVID-19 studies commonly report figures of the overall infection at a stat
 
 An illustration of a deep neural network that maps an arbitrary location $s$ to a spatial kernel, consisting of a feature function $\kappa_s$ (represented through focus points) and weight $w_s$.
 
-![alt text](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/NN_Illustration.pdf)
+![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/NN_Illustration.pdf)
 
 ### Non-stationary neural kernel
 
