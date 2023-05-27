@@ -9,19 +9,20 @@ Most COVID-19 studies commonly report figures of the overall infection at a stat
 
 An illustration of a deep neural network that maps an arbitrary location $s$ to a spatial kernel, consisting of a feature function $\kappa_s$ (represented through focus points) and weight $w_s$.
 
-![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/NN_Illustration.pdf)
+![aaa](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/NN_Illustration.png)
 
 ### Non-stationary neural kernel
 
+![aaa](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Spatial_Kernel_Illustration.pdf)
 
 
 ## Results
 
 Animations below show (1) The evolvement of beat workload distribution from 2014 to 2019 where year 2018 and 2019 are predicted by our model; (2,3) Comparisons of zone workload distribution between existing plan and redesigned plan at 2018 and 2019
 
-Beat distribution over years     | Design comparison for 2018    | Design comparison for 2019
-:----------------------------:|:----------------------------:|:----------------------------:
-![]()  |  ![]() | ![]()
+Data     | Kernel    | Prediction
+:---------------------------:|:---------------------------:|:----------------------------:
+![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/DP_18.png)  |  ![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Spatial_correlation_exo_1.png) | ![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Intensity_16.png)
 
 
 
