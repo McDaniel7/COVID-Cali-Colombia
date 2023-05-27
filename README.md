@@ -9,20 +9,36 @@ Most COVID-19 studies commonly report figures of the overall infection at a stat
 
 An illustration of a deep neural network that maps an arbitrary location $s$ to a spatial kernel, consisting of a feature function $\kappa_s$ (represented through focus points) and weight $w_s$.
 
-![aaa](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/NN_Illustration.png)
+![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/NN_Illustration.png)
 
 ### Non-stationary neural kernel
 
-![aaa](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Spatial_Kernel_Illustration.pdf)
+An example of the non-stationary spatial kernel with two feature functions evaluating at location $s$ (the center of the box), i.e., $\upsilon(s, s') = \left< \phi_s, \phi_{s'}\right>,~\forall s' \in \mathcal{S}$, where $\phi_s = \kappa_s^{(1)} + \kappa_s^{(2)}$. 
+Two purple boxes in the middle indicate the cross-correlated terms ($\kappa_s^{(1)} \cdot \kappa_{s'}^{(2)}$ and $\kappa_s^{(2)} \cdot \kappa_{s'}^{(1)}$); the red and blue boxes indicate the self-correlated terms ($\kappa_s^{(1)} \cdot \kappa_{s'}^{(1)}$ and $\kappa_s^{(2)} \cdot \kappa_{s'}^{(2)}$).
+
+![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Spatial_Kernel_Illustration.png)
 
 
 ## Results
 
-Animations below show (1) The evolvement of beat workload distribution from 2014 to 2019 where year 2018 and 2019 are predicted by our model; (2,3) Comparisons of zone workload distribution between existing plan and redesigned plan at 2018 and 2019
+Animations below show (1) Snapshot of confirmed COVID-19 cases at the week of July 12, 2020. Each dot represents the location of a confirmed case.  (2) Evaluation of the spatial kernel $\upsilon(s, \cdot)$ with $s$ fixed at city airport, which intuitively show the spatial influence of the COVID-19 cases reported at airport. (3) Predicted conditional intensity at June 28.
 
-Data     | Kernel    | Prediction
+<table>
+  <tr>
+    <th> Data </th>
+    <th> Kernel </th>
+    <th> Prediction </th>
+  </tr>
+  <tr>
+    <td> <img src="https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/DP_18.png"  alt="1" width = 360px height = 400px ></td>
+    <td> <img src="https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Spatial_correlation_exo_1.png"  alt="2" width = 360px height = 400px ></td>
+    <td> <img src="https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Intensity_16.png"  alt="3" width = 360px height = 400px ></td>
+  </tr>
+</table>
+
+<!-- Data     | Kernel    | Prediction
 :---------------------------:|:---------------------------:|:----------------------------:
-![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/DP_18.png)  |  ![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Spatial_correlation_exo_1.png) | ![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Intensity_16.png)
+![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Spatial_correlation_exo_1.png) |  ![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Spatial_correlation_exo_1.png) | ![](https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Spatial_correlation_exo_1.png) -->
 
 
 
