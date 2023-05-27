@@ -30,9 +30,9 @@ Animations below show (1) Snapshot of confirmed COVID-19 cases at the week of Ju
     <th> Prediction </th>
   </tr>
   <tr>
-    <td> <img src="https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/DP_18.png"  alt="1" width = 360px height = 400px ></td>
-    <td> <img src="https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Spatial_correlation_exo_1.png"  alt="2" width = 360px height = 400px ></td>
-    <td> <img src="https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Intensity_16.png"  alt="3" width = 360px height = 400px ></td>
+    <td> <img src="https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/DP_18.png"  alt="1" width = 360px height = 360px ></td>
+    <td> <img src="https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Spatial_correlation_exo_1.png"  alt="2" width = 360px height = 360px ></td>
+    <td> <img src="https://github.com/McDaniel7/COVID-Cali-Colombia/blob/main/Results/Intensity_16.png"  alt="3" width = 360px height = 360px ></td>
   </tr>
 </table>
 
